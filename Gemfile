@@ -1,11 +1,8 @@
-# A sample Gemfile
 source "https://rubygems.org"
 
-require 'json'
-require 'open-uri'
-versions = JSON.parse(open('https://pages.github.com/versions.json').read)
-
-
-# gem "rails"
-gem 'github-pages', versions['github-pages']
+gem "jekyll-paginate"
+gem "jekyll-gist"
+gem "jekyll"
+gem 'jekyll-feed'
+gem "rouge"
 gem 'jekyll-compose', group: [:jekyll_plugins]
