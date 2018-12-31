@@ -2,38 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f68635f-cfee-4062-926a-0751403b83a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resume.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/AvenirLTStd-Book.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/AvenirLTStd-Book.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/browserconfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.min.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/octicons-local.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/octicons-local.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/octicons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/octicons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/octicons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/octicons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/octicons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/octicons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/octicons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/octicons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/octicons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/octicons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/syntax/emacs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/syntax/emacs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/syntax/github.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/syntax/github.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/syntax/monokai.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/syntax/monokai.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/syntax/native.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/syntax/native.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/syntax/syntax.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/syntax/syntax.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/syntax/vim.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/syntax/vim.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/white-paper.add.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/white-paper.add.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/white-paper.add.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/white-paper.add.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gruntfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="90">
+              <caret line="6" column="58" lean-forward="true" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -73,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state relative-caret-position="75">
+              <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -119,14 +90,14 @@
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/resume.md" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
-        <option value="$PROJECT_DIR$/src/styles/index.scss" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/styles/index.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1920" />
-    <option name="width" value="1934" />
+    <option name="width" value="1635" />
     <option name="height" value="1404" />
   </component>
   <component name="ProjectView">
@@ -221,18 +192,18 @@
       <updated>1546119355834</updated>
       <workItem from="1546119358051" duration="12317000" />
       <workItem from="1546203153246" duration="7385000" />
-      <workItem from="1546214626477" duration="3911000" />
+      <workItem from="1546214626477" duration="5747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23613000" />
+    <option name="totallyTimeSpent" value="25449000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1934" height="1404" extended-state="0" />
+    <frame x="1920" y="0" width="1635" height="1404" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18602207" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22069825" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Grunt " order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -412,13 +383,6 @@
     <entry file="file://$PROJECT_DIR$/src/styles/browserconfig.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/octicons.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -435,8 +399,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="75">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="58" lean-forward="true" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
         </state>
       </provider>
     </entry>

@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "webpack --config ./webpack.config.js --colors",
-    "jekyll": "bundle exec jekyll serve",
-    "deploy": "gh-pages -b master -d build"
+    "serve": "webpack --config ./webpack.config.js --colors --watch & bundle exec jekyll server",
+    "webpack": "webpack --config ./webpack.config.js --colors",
+    "jekyll": "bundle exec jekyll build",
+    "deploy": "webpack --config ./webpack.config.js --colors && bundle exec jekyll build && gh-pages -d _site -b gh-page"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.6.3",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^2.1.0",
     "file-loader": "^3.0.1",
@@ -21,10 +21,11 @@
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.3",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "gh-pages": "^2.0.1"
   },
   "dependencies": {
     "bulma": "^0.7.2",
-    "gh-pages": "^2.0.1"
+    "@fortawesome/fontawesome-free": "^5.6.3"
   }
 }
