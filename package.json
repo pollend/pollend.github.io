@@ -6,7 +6,7 @@
     "serve": "webpack --config ./webpack.config.js --colors --watch & bundle exec jekyll server",
     "webpack": "webpack --config ./webpack.config.js --colors",
     "jekyll": "bundle exec jekyll build",
-    "deploy": "webpack --config ./webpack.config.js --colors && bundle exec jekyll build && gh-pages -d _site -b gh-page"
+    "deploy": "webpack --config ./webpack.config.js --colors && bundle exec jekyll build && gh-pages -d _site -b master"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.6.0",
