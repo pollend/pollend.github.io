@@ -1,0 +1,28 @@
+career-profile:
+  title: Career Profile
+  summary: |
+    Experienced Research Assistant with a demonstrated history of working in the computer games industry.
+    Skilled in Python, Java Native Interface (JNI), PHP, C++, and Ruby on Rails. Strong research professional graduated from Chapman University.
+education:
+  - degree: Bachelor of Computer Science
+    university: Chapman University
+    time: 2014 - 2018
+languages:
+  - java
+  - C++
+  - C#
+  - C
+  - Python
+  - PHP
+  - SQL
+  - Javascript
+  - R
+frameworks:
+  - Kicad
+  - Linux
+  - Blender
+  - Larvel
+  - Symfony
+  - Gradle
+  - Cmake
+  - Scons

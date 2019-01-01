@@ -2,12 +2,16 @@
 layout: default
 title: A guide to your digital life
 ---
-<div class="listing">
+<div class="articles">
     {% for post in paginator.posts %}
-    <div class="post other link">
-      <h2></span> <a href="{{site.url}}{{post.url}}">{{ post.title }}</a></h2>
-      <p class="post-date">{{ post.date | date_to_string }}</p>
-      {{ post.excerpt }}
-    </div>
+    <section class="section article">
+        <h1 class="title article-title"></span> <a href="{{site.url}}{{post.url}}">{{ post.title }}</a></h1>
+        <h2 class="subtitle">
+            <p class="tag is-rounded">{{ post.date | date_to_string }}</p>
+        </h2>
+        <div class="article-body">
+            {{ post.excerpt }}
+        </div>
+    </section>
     {% endfor %}
 </div>

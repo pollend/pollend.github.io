@@ -1,0 +1,17 @@
+---
+layout: default
+title: A guide to your digital life
+---
+
+<div class="container project-list">
+
+    {% assign projects = site.data.projects %}
+    {% for groups in projects.items %}
+        <h1 class="title title-group">{{ groups.title }}</h1>
+        <div class="project-container">
+            {% for project in groups.items %}
+                {% include project_block.html project = project%}
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>

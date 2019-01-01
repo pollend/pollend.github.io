@@ -1,0 +1,27 @@
+title: Experiences
+items:
+  - title: Research Assistance
+    association: Chapman Rinker
+    link: Some Link
+    time: Nov 2017 - Present
+    description: >
+      Worked with processor Soangra and developed tools to aid patients. This work focused on providing
+      treatment through the use of and design of embedded boards.
+      - Built custom boards based off an ATMEGA and Arudino
+      - Designed custom layouts to interface with embed components and sensors
+  - title: Intern Computer Programmer
+    association: LCPtracker, inc
+    link: https://www.lcptracker.com/
+    time: Jun 2015 - Aug 2015
+    description: >
+      Help provide workflow tools
+      - Worked on implementing a mobile Xamarin application for labor compliance.
+      - implemented MVVM patterns and repository patterns for an Sqlite backend
+  - title: Google Code-in Mentor
+    association: MovingBlocks
+    link: https://terasology.org/2017/07/14/gsoc-students-01.html
+    time: Nov 2017 - Jan 2018
+    description: >
+      Worked with other mentors and built tasks for Google Code In. This includes tasks such as contributing
+      to an existing Terasology Module, working on documentation, javadocs, and research. I worked with students and helped them complete tasks.
+      This includes providing basic guidance for the Terasology code base and also refine a submitted task. The main goal of this is to introduce students to open source development.

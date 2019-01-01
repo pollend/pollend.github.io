@@ -1,0 +1,99 @@
+---
+layout: default
+title: A guide to your digital life
+---
+
+<div class="container resume">
+
+    <div class="columns">
+        <div class="column is-one-quarter">
+            <div class='card equal-height'>
+                <figure class="image profile"><img src="{{ site.owner.avatar }}"></figure>
+
+                <div class="secondary-section">
+                    <section>
+                        <div class="social-media-list">
+                            <div class="is-size-7"><a href="https://twitter.com/{{ site.owner.twitter }}" class="social-media-icons"><i class="fab fa-twitter" aria-hidden="true"></i> <span class="has-text-black">@{{ site.owner.twitter }}</span></a></div>
+                            <div class="is-size-7"><a href="{{ site.owner.linkedin }}" class="social-media-icons"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="has-text-black"> michaelpollind</span></a></div>
+                            <div class="is-size-7"><a href="{{ site.owner.github }}" class="social-media-icons"><i class="fab fa-github" aria-hidden="true"></i><span class="has-text-black"> pollend</span></a></div>
+                            <div class="is-size-7"><a href="mailto:{{ site.owner.email }}" class="social-media-icons"><i class="fas fa-envelope" aria-hidden="true"></i><span class="has-text-black"> {{ site.owner.email }}</span></a></div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="title is-6 is-inline">Languages</h2>
+                        <div class="tags">
+                            {% for lang in  site.data.resume.languages %}
+                                <span class="tag">{{lang}}</span>
+                            {% endfor %}
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="title is-6 is-inline">Tools/Frameworks</h2>
+                        <div class="tags">
+                            {% for framework in  site.data.resume.frameworks %}
+                                <span class="tag">{{framework}}</span>
+                            {% endfor %}
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+        <div class="column">
+
+            <div class="block">
+                {% assign resume = site.data.resume %}
+                <h1 class="title">Education</h1>
+                {% for edu in resume.education %}
+                    <h2 class="title is-6 is-inline">{{ edu.degree }}</h2>
+                    <h2 class="title is-7 is-inline">{{ edu.time }}</h2>
+                    <div>
+                        <span class="tag is-light">{{edu.university}}</span>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="block">
+                {% assign experiences = site.data.experiences %}
+                <h1 class="title">{{experiences.title}}</h1>
+                {% for experience in experiences.items %}
+                    <a href="{{ experience.link }}"><h2 class="title is-6 is-inline">{{ experience.title }}</h2></a><span class="tag is-light">{{experience.association}}</span>
+                    <div><h2 class="title is-7 is-inline">{{ experience.time }}</h2></div>
+                    <div class="content">
+                        {{ experience.description | markdownify }}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="block">
+                {% assign projects = site.data.projects %}
+                <h1 class="title">{{projects.title}}</h1>
+                {% for groups in projects.items %}
+                    {% for project in groups.items %}
+                        {% if project.is-for-resuma %}
+
+                            {% include project_block.html project = project%}
+                        {%endif%}
+                    {% endfor %}
+                {% endfor %}
+            </div>
+
+            <div class="block">
+                {% assign organizations = site.data.organizations %}
+                <h1 class="title">{{organizations.title}}</h1>
+                {% for org in organizations.items %}
+                    <div>
+                        <h2 class="title is-6 is-inline">{{ org.title }}</h2>
+                        <h2 class="title is-7 is-inline">{{ org.time }}</h2>
+                    </div>
+                {% endfor %}
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>

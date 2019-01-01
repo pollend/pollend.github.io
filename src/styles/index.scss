@@ -1,7 +1,16 @@
+//@import "base";
 @import "base";
+@import "resume";
+@import "article";
+@import "footer";
+@import "header";
+@import "projects";
+
 @import "syntax/emacs";
 @import "octicons";
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
+
+@import "~bulma/bulma";
