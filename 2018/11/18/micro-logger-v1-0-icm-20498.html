@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+<title>Michael Pollind
+</title>
+<meta name="description" content="Michael Pollind
+">
+<meta name="keywords" content="">
+<!-- Twitter Card and Open Graph tags -->
+<meta name="twitter:title" content="Micro Logger V1.0 (ICM-20498) &#8211; ">
+<meta name="twitter:description" content="Michael Pollind
+">
+<meta name="twitter:creator" content="@MPollind">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image:src" content="https://pollend.github.io//images/logo.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Micro Logger V1.0 (ICM-20498) &#8211; ">
+<meta property="og:description" content="Michael Pollind
+">
+<meta property="og:url" content="https://pollend.github.io//2018/11/18/micro-logger-v1-0-icm-20498.html">
+<meta property="og:site_name" content="">
+
+<!-- Webmaster Tools verfication -->
+
+
+
+
+<link rel="canonical" href="https://pollend.github.io//2018/11/18/micro-logger-v1-0-icm-20498.html">
+<link href="https://pollend.github.io//feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/build/style.css" type="text/css" />
+
+
+
+<link rel="stylesheet" href="/css/main.min.css" type="text/css" />
+
+
+</head>
+<body>
+  <nav class="navbar main-header">
+  <div class="container">
+    <div class="navbar-brand"><a href="https://pollend.github.io/" class="site-title">Michael Pollind</a></div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://pollend.github.io/">Home</a>
+        <a class="navbar-item" href="https://pollend.github.io//projects">Projects</a>
+        <a class="navbar-item" href="https://pollend.github.io//resume">Resume</a>
+        <a class="navbar-item" href="https://pollend.github.io//feed.xml">RSS</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container">
+  <section class="section article">
+    <h1 class="title article-title"></span> <a href="https://pollend.github.io/">Micro Logger V1.0 (ICM-20498)</a></h1>
+    <h2 class="subtitle">
+        <p class="tag is-rounded">18 Nov 2018</p>
+    </h2>
+    <div class="content">
+        <h2 id="introduction">Introduction</h2>
+<p>The Micro Logger is a small wearable sensor that logs gyro and acceleration data directly to an SD card. This first design was kept very simple and the footprint was minimized down as much as possible. Going forward, there are some basic plans to replace the sd card with an e.mmc module and solder the connections of the battery directly to the board with a charging IC. This should make it possible to charge battery through a micro-usb interface. Variations of this in the future can explore different mem sensors and compare characteristic performance.</p>
+<h2 id="hardware">Hardware</h2>
+
+<p><img src="https://sites.chapman.edu/soangra/files/2018/11/Screenshot_20181117_002654-12glz3o.png" alt="Micro Logger" height="auto" width="20%" /></p>
+
+<p>This implementation of the sensor uses an <a href="https://www.invensense.com/products/motion-tracking/9-axis/icm-20948">ICM-20498</a> and a i2c bridge(<a href="http://www.ti.com/lit/ds/symlink/pca9306.pdf">PCA9306DCUR</a>). Due to the lower running voltage of the mems sensor a separate drop out is used to bring the voltage down to 1.8v vs the 3.3v that is running the micro processor. The signals from the mems sensor are passed through an <a href="https://www.mouser.com/ProductDetail/Microchip-Technology-Atmel/ATMEGA328-AU?qs=sGAEpiMZZMvqv2n3s2xjse40PngS4U1x0lh%252bvvDKKQk%3d">ATMEGA-328-AU</a> running <a href="https://github.com/MCUdude/MicroCore">MicroCore</a> before being saved to an SD card. The 2x3 header on the board is an ISP programming header for flashing the processor. A board level schematic can be found here: <a href="https://sites.chapman.edu/soangra/files/2018/10/micro_logger-287fha3.pdf">Schematic</a></p>
+
+<p>Some tweaks to the design include changing the the resistors on the i2c line and testing if it’s possible to increase the frequency. The ATMEGA328-AU is already fairly small but Microchip also sell a variation of the same processor in a flat-package variant; This could help with minimizing the size of the board.</p>
+
+<hr />
+
+<h2 id="software">Software</h2>
+
+<p><img src="https://lh3.googleusercontent.com/UKQB0AQtzkLAy3trR0bVvPspVhcSC9gn2UAZNo2z88yInSNjwv7RPYvIaLRJ5z2YhRBh4OHqOhEmZSeX9SMuFAsUwmkCiilkT1IGzoCvdMrI7FxCaFJ6_C8YbEF4iZYj4uo3BehSbCX-iIUoqaFq9ETzk_pk7xMMrW98SJKqcUZnyn50b236aeMRvvpzGjsqVI5oM99etDq6tRjvJmjPU8wTDmMio8J7lR-mYPyxm8ML2RWyNZQYwrXvqPMk61tF7x2g17q74hi_YU-qPoYkXqJwyxbVl0vC2T6EFIVtYlHeLX_jOjH7no9nCohUppFRRkx0UL_FPlvpPLe2hH5lyh4URnP6nmjlYNLVaSfgLcN3OJ16VrVByb_UwKjkh92y2yxAnX_wn9dnKHzUicwRtzIa6xy-rU2XHNhLBLN1pt--IY5blEReVyRbvxgMnIuh_E_-fJaL0c-zqOAFhxv2yZ72KUGxHjpF7tSIsJYwtcXI-uN5y4RPliPKHTBLGBh3f1mhHa6dX0ofyOBxZ-pfRxa40R-BkCDN9k_xI8IYiGQBUduEfjnRACP-tLTq8M-PKm9kKUI8lLECYJtAuuSSaAll7YtQnp-8lVyMcmG2qwfNC3zZAmHirmjSk1jgEqQcOLP_KVTTdYGNudB_dLdkaM78=w1795-h848-no" alt="Programming" width="438" height="207" /></p>
+
+<p>It’s possible to load up a more custom program for a specialty task through the open ISP header on the board. A pogo pin adapter should make the process of re-flashing the processor easier (<a href="https://www.sparkfun.com/products/11591">pogo adapter</a>). The github repository contains all the necessary code for a basic logger.</p>
+
+<p>The SD card library that comes default with ardunio is horribly slow. I plan to exchange this with SdFat along with storing the data to a binary format. this should allow more data to be stored  and the smaller format should allow for a high frequency.</p>
+
+<p><a href="https://github.com/GaitRehabilitation/mini_data_capture/tree/ICM-20948">Project Files</a></p>
+
+    </div>
+</section>
+
+
+
+  <!-- Pagination links -->
+<div class="level container is-mobile foot">
+
+  <div class="level-left icon-bar">
+    
+      <a href="www.linkedin.com/in/michaelpollind" class="social-media-icons"><i class="fab fa-2x fa-linkedin" aria-hidden="true"></i></a>
+    
+    
+      <a href="mailto:polli104@mail.chapman.edu" class="social-media-icons"><i class="fas fa-2x fa-envelope-square" aria-hidden="true"></i></a>
+    
+    
+      <a href="https://twitter.com/MPollind" class="social-media-icons"><i class="fab fa-2x fa-twitter-square" aria-hidden="true"></i></a>
+    
+    
+      <a href="https://github.com/pollend" class="social-media-icons"><i class="fab fa-2x fa-github-square"></i></a>
+    
+  </div>
+
+  <div class="level-right">
+    
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </div><!-- /.main -->
+</body>
+</html>

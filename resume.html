@@ -1,40 +1,126 @@
----
-layout: default
-title: A guide to your digital life
----
+<!DOCTYPE html>
 
-<div class="container resume">
+<html>
+
+<head>
+  <meta charset="utf-8">
+<title>Michael Pollind
+</title>
+<meta name="description" content="Michael Pollind
+">
+
+<!-- Twitter Card and Open Graph tags -->
+<meta name="twitter:title" content="A guide to your digital life &#8211; ">
+<meta name="twitter:description" content="Michael Pollind
+">
+<meta name="twitter:creator" content="@MPollind">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image:src" content="https://pollend.github.io//images/logo.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A guide to your digital life &#8211; ">
+<meta property="og:description" content="Michael Pollind
+">
+<meta property="og:url" content="https://pollend.github.io//resume.html">
+<meta property="og:site_name" content="">
+
+<!-- Webmaster Tools verfication -->
+
+
+
+
+<link rel="canonical" href="https://pollend.github.io//resume.html">
+<link href="https://pollend.github.io//feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/build/style.css" type="text/css" />
+
+
+
+<link rel="stylesheet" href="/css/main.min.css" type="text/css" />
+
+
+</head>
+<body>
+  <nav class="navbar main-header">
+  <div class="container">
+    <div class="navbar-brand"><a href="https://pollend.github.io/" class="site-title">Michael Pollind</a></div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://pollend.github.io/">Home</a>
+        <a class="navbar-item" href="https://pollend.github.io//projects">Projects</a>
+        <a class="navbar-item" href="https://pollend.github.io//resume">Resume</a>
+        <a class="navbar-item" href="https://pollend.github.io//feed.xml">RSS</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container">
+  <div class="container resume">
 
     <div class="columns">
         <div class="column is-one-quarter">
             <div class='card equal-height'>
-                <figure class="image profile"><img src="{{ site.owner.avatar }}"></figure>
+                <figure class="image profile"><img src="https://avatars1.githubusercontent.com/u/854359?s=460&v=4"></figure>
 
                 <div class="secondary-section">
                     <section>
                         <div class="social-media-list">
-                            <div class="is-size-7"><a href="https://twitter.com/{{ site.owner.twitter }}" class="social-media-icons"><i class="fab fa-twitter" aria-hidden="true"></i> <span class="has-text-black">@{{ site.owner.twitter }}</span></a></div>
-                            <div class="is-size-7"><a href="{{ site.owner.linkedin }}" class="social-media-icons"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="has-text-black"> michaelpollind</span></a></div>
-                            <div class="is-size-7"><a href="{{ site.owner.github }}" class="social-media-icons"><i class="fab fa-github" aria-hidden="true"></i><span class="has-text-black"> pollend</span></a></div>
-                            <div class="is-size-7"><a href="mailto:{{ site.owner.email }}" class="social-media-icons"><i class="fas fa-envelope" aria-hidden="true"></i><span class="has-text-black"> {{ site.owner.email }}</span></a></div>
+                            <div class="is-size-7"><a href="https://twitter.com/MPollind" class="social-media-icons"><i class="fab fa-twitter" aria-hidden="true"></i> <span class="has-text-black">@MPollind</span></a></div>
+                            <div class="is-size-7"><a href="www.linkedin.com/in/michaelpollind" class="social-media-icons"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="has-text-black"> michaelpollind</span></a></div>
+                            <div class="is-size-7"><a href="https://github.com/pollend" class="social-media-icons"><i class="fab fa-github" aria-hidden="true"></i><span class="has-text-black"> pollend</span></a></div>
+                            <div class="is-size-7"><a href="mailto:polli104@mail.chapman.edu" class="social-media-icons"><i class="fas fa-envelope" aria-hidden="true"></i><span class="has-text-black"> polli104@mail.chapman.edu</span></a></div>
                         </div>
                     </section>
 
                     <section>
                         <h2 class="title is-6 is-inline">Languages</h2>
                         <div class="tags">
-                            {% for lang in  site.data.resume.languages %}
-                                <span class="tag">{{lang}}</span>
-                            {% endfor %}
+                            
+                                <span class="tag">java</span>
+                            
+                                <span class="tag">C++</span>
+                            
+                                <span class="tag">C#</span>
+                            
+                                <span class="tag">C</span>
+                            
+                                <span class="tag">Python</span>
+                            
+                                <span class="tag">PHP</span>
+                            
+                                <span class="tag">SQL</span>
+                            
+                                <span class="tag">Javascript</span>
+                            
+                                <span class="tag">R</span>
+                            
                         </div>
                     </section>
 
                     <section>
                         <h2 class="title is-6 is-inline">Tools/Frameworks</h2>
                         <div class="tags">
-                            {% for framework in  site.data.resume.frameworks %}
-                                <span class="tag">{{framework}}</span>
-                            {% endfor %}
+                            
+                                <span class="tag">Kicad</span>
+                            
+                                <span class="tag">Linux</span>
+                            
+                                <span class="tag">Blender</span>
+                            
+                                <span class="tag">Larvel</span>
+                            
+                                <span class="tag">Symfony</span>
+                            
+                                <span class="tag">Gradle</span>
+                            
+                                <span class="tag">Cmake</span>
+                            
+                                <span class="tag">Scons</span>
+                            
                         </div>
                     </section>
                 </div>
@@ -44,51 +130,127 @@ title: A guide to your digital life
         <div class="column">
 
             <div class="block">
-                {% assign resume = site.data.resume %}
+                
                 <h1 class="title">Education</h1>
-                {% for edu in resume.education %}
-                    <h2 class="title is-6 is-inline">{{ edu.degree }}</h2>
-                    <h2 class="title is-7 is-inline">{{ edu.time }}</h2>
+                
+                    <h2 class="title is-6 is-inline">Bachelor of Computer Science</h2>
+                    <h2 class="title is-7 is-inline">2014 - 2018</h2>
                     <div>
-                        <span class="tag is-light">{{edu.university}}</span>
+                        <span class="tag is-light">Chapman University</span>
                     </div>
-                {% endfor %}
+                
             </div>
 
             <div class="block">
-                {% assign experiences = site.data.experiences %}
-                <h1 class="title">{{experiences.title}}</h1>
-                {% for experience in experiences.items %}
-                    <a href="{{ experience.link }}"><h2 class="title is-6 is-inline">{{ experience.title }}</h2></a><span class="tag is-light">{{experience.association}}</span>
-                    <div><h2 class="title is-7 is-inline">{{ experience.time }}</h2></div>
+                
+                <h1 class="title">Experiences</h1>
+                
+                    <a href="Some Link"><h2 class="title is-6 is-inline">Research Assistance</h2></a><span class="tag is-light">Chapman Rinker</span>
+                    <div><h2 class="title is-7 is-inline">Nov 2017 - Present</h2></div>
                     <div class="content">
-                        {{ experience.description | markdownify }}
+                        <p>Worked with processor Soangra and developed tools to aid patients. This work focused on providing treatment through the use of and design of embedded boards. - Built custom boards based off an ATMEGA and Arudino - Designed custom layouts to interface with embed components and sensors</p>
+
                     </div>
-                {% endfor %}
+                
+                    <a href="https://www.lcptracker.com/"><h2 class="title is-6 is-inline">Intern Computer Programmer</h2></a><span class="tag is-light">LCPtracker, inc</span>
+                    <div><h2 class="title is-7 is-inline">Jun 2015 - Aug 2015</h2></div>
+                    <div class="content">
+                        <p>Help provide workflow tools - Worked on implementing a mobile Xamarin application for labor compliance. - implemented MVVM patterns and repository patterns for an Sqlite backend</p>
+
+                    </div>
+                
+                    <a href="https://terasology.org/2017/07/14/gsoc-students-01.html"><h2 class="title is-6 is-inline">Google Code-in Mentor</h2></a><span class="tag is-light">MovingBlocks</span>
+                    <div><h2 class="title is-7 is-inline">Nov 2017 - Jan 2018</h2></div>
+                    <div class="content">
+                        <p>Worked with other mentors and built tasks for Google Code In. This includes tasks such as contributing to an existing Terasology Module, working on documentation, javadocs, and research. I worked with students and helped them complete tasks. This includes providing basic guidance for the Terasology code base and also refine a submitted task. The main goal of this is to introduce students to open source development.</p>
+
+                    </div>
+                
             </div>
 
             <div class="block">
-                {% assign projects = site.data.projects %}
-                <h1 class="title">{{projects.title}}</h1>
-                {% for groups in projects.items %}
-                    {% for project in groups.items %}
-                        {% if project.is-for-resuma %}
+                
+                <h1 class="title">Projects</h1>
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
 
-                            {% include project_block.html project = project%}
-                        {%endif%}
-                    {% endfor %}
-                {% endfor %}
+                            <h2 class="title is-5 is-inline">S.M.A.R.T</h2>
+
+
+
+
+
+
+
+
+<div class="content main-body">
+    <p>A tool that interfaces with Mbient sensors for the use of streaming and collecting live data.</p>
+
+</div>
+                        
+                    
+                        
+
+                            <h2 class="title is-5 is-inline">Mini Data Capture</h2>
+
+
+<a href="https://github.com/GaitRehabilitation/mini_data_capture/tree/ICM-20948" class="social-media-icons"><i class="fab fa-github" aria-hidden="true"></i></a>
+
+
+
+
+
+<a href="https://sites.chapman.edu/soangra/2018/11/17/micro-logger-v1-0-icm-20498/"><i class="fas fa-link"></i></a>
+
+
+
+<div class="content main-body">
+    <p>An Ardunio based logger that interfaces with an ICM-2048 and saves the resulting data to a SD card.</p>
+
+</div>
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                
             </div>
 
             <div class="block">
-                {% assign organizations = site.data.organizations %}
-                <h1 class="title">{{organizations.title}}</h1>
-                {% for org in organizations.items %}
+                
+                <h1 class="title">Organizations</h1>
+                
                     <div>
-                        <h2 class="title is-6 is-inline">{{ org.title }}</h2>
-                        <h2 class="title is-7 is-inline">{{ org.time }}</h2>
+                        <h2 class="title is-6 is-inline">Terasology</h2>
+                        <h2 class="title is-7 is-inline">Jan 2015 - Now</h2>
                     </div>
-                {% endfor %}
+                
+                    <div>
+                        <h2 class="title is-6 is-inline">UCI Video Game Development Club (VGDC)</h2>
+                        <h2 class="title is-7 is-inline">2011 - 2015</h2>
+                    </div>
+                
+                    <div>
+                        <h2 class="title is-6 is-inline">Chapman UX Socienty</h2>
+                        <h2 class="title is-7 is-inline">2011 - 2015</h2>
+                    </div>
+                
             </div>
 
 
@@ -97,3 +259,42 @@ title: A guide to your digital life
     </div>
 
 </div>
+
+  <!-- Pagination links -->
+<div class="level container is-mobile foot">
+
+  <div class="level-left icon-bar">
+    
+      <a href="www.linkedin.com/in/michaelpollind" class="social-media-icons"><i class="fab fa-2x fa-linkedin" aria-hidden="true"></i></a>
+    
+    
+      <a href="mailto:polli104@mail.chapman.edu" class="social-media-icons"><i class="fas fa-2x fa-envelope-square" aria-hidden="true"></i></a>
+    
+    
+      <a href="https://twitter.com/MPollind" class="social-media-icons"><i class="fab fa-2x fa-twitter-square" aria-hidden="true"></i></a>
+    
+    
+      <a href="https://github.com/pollend" class="social-media-icons"><i class="fab fa-2x fa-github-square"></i></a>
+    
+  </div>
+
+  <div class="level-right">
+    
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </div><!-- /.main -->
+</body>
+</html>
