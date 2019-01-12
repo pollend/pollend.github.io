@@ -70,3 +70,45 @@ items:
         github: https://github.com/Terasology/Rails
         description: >
           A mod that allows tracks to be customized and edited
+  - title: Small Game Projects
+    description:
+    image:
+    link: 
+    items:
+      - title: Slice To Dye
+        is-for-resuma: False
+        link: https://play.google.com/store/apps/details?id=slice.flame.smoketree
+        github:
+        description: |
+          SLice is a twitch based 2D hybrid action-puzzle game with a story, 
+          that is best described as a mixture of Fruit Ninja and Spuzzies. 
+          The entire game revolves around color theory. It also includes special 
+          abilities, equipment, and varying enemy types. SLice starts off easy, 
+          slowly wading players into the full suite of mechanics.
+      - title: Caketominoes
+        is-for-resuma: True
+        steam: https://store.steampowered.com/app/517770/Caketomino/
+        description: |
+          Caketominoes is a VR game based mainly around the concept of pantomimes.
+          - implemented mechanice to pick up and snap blocks to board
+          - modeled a lot of the elements that appeared in the kitchen
+      - title: Alchehistory
+        googleplay: https://play.google.com/store/apps/details?id=com.SmoketreeStudios.Trees.Alchehistory&hl=en
+        is-for-resuma: True
+        description: |
+          A simple Match 3 game revolving around combining elements to form other 
+          elements and vise versa. This game was developed in unity3d and featured 
+          a selection of small self contained levels and an infinite mode of play. 
+      - title: Momentus
+        is-for-resuma: True
+        description: |
+          Momentus is a basic space game where the basic goal is to bring resources 
+          back to the home planet. Momentus was featured in the IEEE triple game sig 
+          and came in at second place. 
+          - worked on the major parts of the ui
+  - title: Circuit Boards
+    items:
+      - title: Micro Logger
+        is-for-resuma: True
+
+
