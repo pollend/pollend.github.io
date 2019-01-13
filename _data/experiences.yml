@@ -5,16 +5,17 @@ items:
     link: https://sites.chapman.edu/soangra/
     time: Nov 2017 - Present
     description: >
-      Worked with processor Soangra and developed tools to aid patients. This work focused on providing
+      Worked with professor Soangra and developed tools to aid patients. This work focused on providing
       treatment through the use of and design of embedded boards.
       - Built custom boards based off an ATMEGA and Arudino
       - Designed custom layouts to interface with embed components and sensors
+      - Designed a PCB in kicad and had the final board manufactured from a fab facility
   - title: Intern Computer Programmer
     association: LCPtracker, inc
     link: https://www.lcptracker.com/
     time: Jun 2015 - Aug 2015
-    description: >
-      Help provide workflow tools
+    description: |
+      Help provide workflow tools for collecting on site signratures.
       - Worked on implementing a mobile Xamarin application for labor compliance.
       - implemented MVVM patterns and repository patterns for an Sqlite backend
   - title: Voxx Climate Research

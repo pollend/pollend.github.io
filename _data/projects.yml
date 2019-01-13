@@ -43,7 +43,7 @@ items:
       - title: S.M.A.R.T
         is-for-resuma: True
         link:
-        github:
+        github: https://github.com/GaitRehabilitation/SMART
         description: >
           A tool that interfaces with Mbient sensors for the use of streaming and collecting live data.
       - title: Mini Data Capture
@@ -91,7 +91,7 @@ items:
         steam: https://store.steampowered.com/app/517770/Caketomino/
         description: |
           Caketominoes is a VR game based mainly around the concept of pantomimes.
-          - implemented mechanice to pick up and snap blocks to board
+          - implemented mechanic to pick up and snap blocks to board
           - modeled a lot of the elements that appeared in the kitchen
       - title: Alchehistory
         googleplay: https://play.google.com/store/apps/details?id=com.SmoketreeStudios.Trees.Alchehistory&hl=en
@@ -103,9 +103,10 @@ items:
       - title: Momentus
         is-for-resuma: True
         description: |
-          Momentus is a basic space game where the basic goal is to bring resources 
-          back to the home planet. Momentus was featured in the IEEE triple game sig 
-          and came in at second place. 
+          Momentus is a simple space game where the basic goal is to bring resources
+          back to the home planet. This game was featured in the 2013 IEEE triple game sig
+          and came in at second place.
+          - Won for Best Space Game and Best Asteroid Game
           - worked on the major parts of the ui
   - title: Datascience
     items:
