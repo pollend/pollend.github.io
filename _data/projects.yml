@@ -26,16 +26,16 @@ items:
       - title: Virginia Reel
         is-for-resuma: False
         github: https://github.com/pollend/Parkitect_Virginia_Reel
-        steam: https://steamcommunity.com/sharedfiles/filedetails/?id=1322946590
+        steam: https://steamcommunity.com/sharedfiles/filedetails/?id=1322016962
         description: >
           A mod that allows tracks to be customized and edited
       - title: Panda Entertainer
         is-for-resuma: False
         github: https://github.com/pollend/Parkitect_Panda_Entertainer
-        steam: https://steamcommunity.com/sharedfiles/filedetails/?id=1322946590
+        steam: https://steamcommunity.com/sharedfiles/filedetails/?id=1321453322
         description: >
           A mod that allows tracks to be customized and edited
-  - title: Rinker Research
+  - title: Chapman Rinker
     description:
     image:
     link:
@@ -52,6 +52,7 @@ items:
         github: https://github.com/GaitRehabilitation/mini_data_capture/tree/ICM-20948
         description: >
           An Ardunio based logger that interfaces with an ICM-2048 and saves the resulting data to a SD card.
+          - The data is saved at a rate of 500hz
   - title: Terasology
     description:
     image:
@@ -70,14 +71,14 @@ items:
         github: https://github.com/Terasology/Rails
         description: >
           A mod that allows tracks to be customized and edited
-  - title: Small Game Projects
+  - title: Mini Game Projects
     description:
     image:
     link: 
     items:
       - title: Slice To Dye
-        is-for-resuma: False
-        link: https://play.google.com/store/apps/details?id=slice.flame.smoketree
+        is-for-resuma: True
+        googleplay: https://play.google.com/store/apps/details?id=slice.flame.smoketree
         github:
         description: |
           SLice is a twitch based 2D hybrid action-puzzle game with a story, 
@@ -106,9 +107,32 @@ items:
           back to the home planet. Momentus was featured in the IEEE triple game sig 
           and came in at second place. 
           - worked on the major parts of the ui
-  - title: Circuit Boards
+  - title: Datascience
     items:
-      - title: Micro Logger
+      - title: Core Logic Challenge 1
+        github: https://github.com/pollend/CoreLogicChallenge
         is-for-resuma: True
+        description: |
+          - Worked on data provided by Core Logic
+          - downloaded and parsed SRTM data
+          - provided visualziations that showed the elevation of the house and information about the view of the house
+          from bodies of water
+  - title: Webwork
+    items:
+      - title: Chapman Radio
+        is-for-resuma: False
+        description: |
+          A Re-implementation of [Chapman Radio]("https://chapmanradio.com/home") from the ground up.
+          The site was built with symfony and provides a full wrapper around icecast. custom
+          passwords are set for indvidual streams and a scheduling scheme is used to manage shows.
+      - title: White Rhino Webpage
+        is-for-resuma: False
+        link: http://discountgiftcards.biz/
+        github: https://github.com/pollend/Gray--Wordpress-Theme
+        description: |
+          Developed a webpage for client that specializes in business promotion. The theme
+          was built from scratch on top of wordpress. The theme itself
+          featuring a built in options page that allows for more fine tuning by the client.
+
 
 

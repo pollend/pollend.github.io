@@ -2,7 +2,7 @@ title: Experiences
 items:
   - title: Research Assistance
     association: Chapman Rinker
-    link: Some Link
+    link: https://sites.chapman.edu/soangra/
     time: Nov 2017 - Present
     description: >
       Worked with processor Soangra and developed tools to aid patients. This work focused on providing
@@ -17,11 +17,21 @@ items:
       Help provide workflow tools
       - Worked on implementing a mobile Xamarin application for labor compliance.
       - implemented MVVM patterns and repository patterns for an Sqlite backend
+  - title: Voxx Climate Research
+    association: Voxx Analytics
+    link: http://www.voxxanalytics.com
+    time: Dec 2017 - Present
+    description: |
+      - Built a web scraper in nightmare.js to scrape data from web of science and also collected data from NSF grant database
+      - Using dplyer and R to clean and remove duplicates from WOS
+      - developed a small python app with questions from the NSF data that will be used in a logistics model
   - title: Google Code-in Mentor
     association: MovingBlocks
     link: https://terasology.org/2017/07/14/gsoc-students-01.html
     time: Nov 2017 - Jan 2018
-    description: >
+    description: |
       Worked with other mentors and built tasks for Google Code In. This includes tasks such as contributing
-      to an existing Terasology Module, working on documentation, javadocs, and research. I worked with students and helped them complete tasks.
+      to an existing Terasology Module, working on documentation, Javadocs, and research. I worked with students and helped them complete tasks.
       This includes providing basic guidance for the Terasology code base and also refine a submitted task. The main goal of this is to introduce students to open source development.
+      - Helped students learn the in and outs of open source development and also provided support when finishing tasks
+      - Reviewed work submitted by a student (code review, documentation review, javadocs, etc...)

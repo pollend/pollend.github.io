@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f68635f-cfee-4062-926a-0751403b83a8" name="Default Changelist" comment="" />
+    <list default="true" id="9f68635f-cfee-4062-926a-0751403b83a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/_data/experiences.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/experiences.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/projects.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/projects.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/project_block.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/project_block.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -43,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -64,8 +68,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_data/experiences.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="5" selection-start-line="1" selection-end-line="1" selection-end-column="5" />
+            <state relative-caret-position="465">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_data/projects.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="34" column="80" selection-start-line="34" selection-start-column="80" selection-end-line="34" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/project_block.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -96,11 +118,13 @@
       <find>bulm</find>
       <find>h2</find>
       <find>header-container</find>
-      <find>github</find>
       <find>githu</find>
       <find>is-for-resuma</find>
       <find>date</find>
       <find>Edu</find>
+      <find>.steam</find>
+      <find>caketom</find>
+      <find>github</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,26 +147,26 @@
         <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/src/styles/_footer.scss" />
         <option value="$PROJECT_DIR$/src/styles/_article_body.scss" />
-        <option value="$PROJECT_DIR$/_data/experiences.yml" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/src/styles/_resume.scss" />
         <option value="$PROJECT_DIR$/src/styles/index.scss" />
         <option value="$PROJECT_DIR$/src/styles/_projects.scss" />
-        <option value="$PROJECT_DIR$/_data/projects.yml" />
-        <option value="$PROJECT_DIR$/_includes/project_block.html" />
         <option value="$PROJECT_DIR$/projects.html" />
         <option value="$PROJECT_DIR$/_data/resume.yml" />
         <option value="$PROJECT_DIR$/_data/organizations.yml" />
         <option value="$PROJECT_DIR$/resume.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/_includes/project_block.html" />
+        <option value="$PROJECT_DIR$/_data/experiences.yml" />
+        <option value="$PROJECT_DIR$/_data/projects.yml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1916" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1954" />
     <option name="width" value="1284" />
-    <option name="height" value="1408" />
+    <option name="height" value="1400" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -155,6 +179,11 @@
             <path>
               <item name="pollend.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="pollend.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pollend.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pollend.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pollend.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -206,14 +235,15 @@
       <workItem from="1546214626477" duration="19704000" />
       <workItem from="1546287681316" duration="26371000" />
       <workItem from="1546546797045" duration="960000" />
+      <workItem from="1547335095898" duration="7097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66737000" />
+    <option name="totallyTimeSpent" value="73834000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1916" y="0" width="1284" height="1408" extended-state="1" />
+    <frame x="1954" y="0" width="1284" height="1400" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8427673" visible="true" weight="0.2482043" />
@@ -434,20 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/project_block.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/projects.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resume.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1290">
@@ -484,17 +500,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/experiences.yml">
+    <entry file="file://$PROJECT_DIR$/_includes/project_block.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="5" selection-start-line="1" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/experiences.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/projects.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="34" column="80" selection-start-line="34" selection-start-column="80" selection-end-line="34" selection-end-column="80" />
         </state>
       </provider>
     </entry>
