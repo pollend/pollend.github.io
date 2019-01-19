@@ -16,19 +16,19 @@ items:
         github: https://github.com/pollend/Parkitect_CorkscrewCoaster
         steam: https://steamcommunity.com/sharedfiles/filedetails/?id=1363563059
         description: >
-          Adds a custom corkscrew coaster to Parkitect.
+          Adds a corkscrew coaster to Parkitect.
       - title: Side Friction Coaster
         is-for-resuma: False
         github: https://github.com/pollend/Parkitect_Side_Friction_Coaster
         steam: https://steamcommunity.com/sharedfiles/filedetails/?id=1322946590
         description: >
-          A mod that allows tracks to be customized and edited
+          Adds a Side Friction Coaster to Parkitect.
       - title: Virginia Reel
         is-for-resuma: False
         github: https://github.com/pollend/Parkitect_Virginia_Reel
         steam: https://steamcommunity.com/sharedfiles/filedetails/?id=1322016962
         description: >
-          A mod that allows tracks to be customized and edited
+          Adds a Virginia Reel to Parkitect.
       - title: Panda Entertainer
         is-for-resuma: False
         github: https://github.com/pollend/Parkitect_Panda_Entertainer

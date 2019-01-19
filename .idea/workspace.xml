@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f68635f-cfee-4062-926a-0751403b83a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_data/experiences.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/experiences.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/projects.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/projects.yml" afterDir="false" />
-    </list>
+    <list default="true" id="9f68635f-cfee-4062-926a-0751403b83a8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -76,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_data/projects.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="107" column="38" lean-forward="true" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
+            <state relative-caret-position="190">
+              <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -235,16 +232,15 @@
       <workItem from="1546214626477" duration="19704000" />
       <workItem from="1546287681316" duration="26371000" />
       <workItem from="1546546797045" duration="960000" />
-      <workItem from="1547335095898" duration="8703000" />
+      <workItem from="1547335095898" duration="9305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75440000" />
+    <option name="totallyTimeSpent" value="76042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3200" y="0" width="1284" height="1404" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8427673" visible="true" weight="0.2482043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -523,8 +519,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_data/projects.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="107" column="38" lean-forward="true" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
+        <state relative-caret-position="190">
+          <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
         </state>
       </provider>
     </entry>

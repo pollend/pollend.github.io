@@ -1,38 +1,38 @@
-title: Experiences
+title: Experience
 items:
   - title: Research Assistance
     association: Chapman Rinker
     link: https://sites.chapman.edu/soangra/
     time: Nov 2017 - Present
     description: >
-      Worked with professor Soangra and developed tools to aid patients. This work focused on providing
+      Worked with Professor Soangra and developed tools for physical therapy. This work focused on providing
       treatment through the use of and design of embedded boards.
-      - Built custom boards based off an ATMEGA and Arudino
-      - Designed custom layouts to interface with embed components and sensors
+      - Built custom boards around arduino based circuits boards
+      - Designed custom layouts to interface with embedded components and sensors
       - Designed a PCB in kicad and had the final board manufactured from a fab facility
   - title: Intern Computer Programmer
     association: LCPtracker, inc
     link: https://www.lcptracker.com/
     time: Jun 2015 - Aug 2015
     description: |
-      Help provide workflow tools for collecting on site signratures.
-      - Worked on implementing a mobile Xamarin application for labor compliance.
-      - implemented MVVM patterns and repository patterns for an Sqlite backend
+      Provided workflow tools for collecting on site signatures.
+      - Implemented a mobile Xamarin application for labor compliance.
+      - Implemented MVVM patterns and repository patterns for an Sqlite backend
   - title: Voxx Climate Research
     association: Voxx Analytics
     link: http://www.voxxanalytics.com
     time: Dec 2017 - Present
     description: |
       - Built a web scraper in nightmare.js to scrape data from web of science and also collected data from NSF grant database
-      - Using dplyer and R to clean and remove duplicates from WOS
-      - developed a small python app with questions from the NSF data that will be used in a logistics model
+      - Used dplyer and R to clean and remove duplicates from WOS
+      - Developed a small python app with questions from the NSF data that will be used in a logistics model
   - title: Google Code-in Mentor
     association: MovingBlocks
     link: https://terasology.org/2017/07/14/gsoc-students-01.html
     time: Nov 2017 - Jan 2018
     description: |
-      Worked with other mentors and built tasks for Google Code In. This includes tasks such as contributing
+      Worked with other mentors and built tasks for Google Code In. This included tasks such as contributing
       to an existing Terasology Module, working on documentation, Javadocs, and research. I worked with students and helped them complete tasks.
-      This includes providing basic guidance for the Terasology code base and also refine a submitted task. The main goal of this is to introduce students to open source development.
+      This included providing basic guidance for the Terasology code base and also refining a submitted task. The main goal of this was to introduce students to open source development.
       - Helped students learn the in and outs of open source development and also provided support when finishing tasks
       - Reviewed work submitted by a student (code review, documentation review, javadocs, etc...)
