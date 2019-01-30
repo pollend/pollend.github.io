@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+<title>Michael Pollind
+</title>
+<meta name="description" content="Michael Pollind
+">
+<meta name="keywords" content="">
+<!-- Twitter Card and Open Graph tags -->
+<meta name="twitter:title" content="Ardunio, Avr and Scons &#8211; ">
+<meta name="twitter:description" content="Michael Pollind
+">
+<meta name="twitter:creator" content="@MPollind">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image:src" content="https://pollend.github.io//images/logo.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ardunio, Avr and Scons &#8211; ">
+<meta property="og:description" content="Michael Pollind
+">
+<meta property="og:url" content="https://pollend.github.io//2019/01/29/ardunio-avr-scons.html">
+<meta property="og:site_name" content="">
+
+<!-- Webmaster Tools verfication -->
+
+
+
+
+<link rel="canonical" href="https://pollend.github.io//2019/01/29/ardunio-avr-scons.html">
+<link href="https://pollend.github.io//feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/build/style.css" type="text/css" />
+
+
+
+<link rel="stylesheet" href="/css/main.min.css" type="text/css" />
+
+
+</head>
+<body>
+  <nav class="navbar main-header">
+  <div class="container">
+    <div class="navbar-brand"><a href="https://pollend.github.io/" class="site-title">Michael Pollind</a></div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://pollend.github.io/">Home</a>
+        <a class="navbar-item" href="https://pollend.github.io//projects">Projects</a>
+        <a class="navbar-item" href="https://pollend.github.io//resume">Resume</a>
+        <a class="navbar-item" href="https://pollend.github.io//feed.xml">RSS</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container">
+  <section class="section article">
+    <h1 class="title article-title"></span> <a href="https://pollend.github.io/">Ardunio, Avr and Scons</a></h1>
+    <h2 class="subtitle">
+        <p class="tag is-rounded">29 Jan 2019</p>
+    </h2>
+    <div class="content">
+        <p>The Arduino IDE is a really good starting environment but I was looking for something a bit more flexible. 
+Atmel studio is built for AVR chips but the environment obscures a lot of the process and adding an Ardunio library prevents the IDE 
+from properly building the binary and working out how to fix the build was just too much of a hassle. This configuration allows the use of other 
+environments besides the Ardunio IDE such as <a href="https://code.visualstudio.com/">Vscode</a> and <a href="https://www.jetbrains.com/clion/">Clion</a>. 
+Scons is a build system centered around python and can be easily configured to produce the correct binaries for AVR using avr-gcc, avr-g++, and avr-objcopy. The basic process is 
+to compile the source using the avr-g++, avr-gcc and then converting the compiled object files to ihex.
+The build process can also produce the necessary .hex files that can be flashed with <a href="https://www.microchip.com/mplab/mplab-integrated-programming-environment">Mplab IPE</a> or avrdude.</p>
+
+<p>The scons build is split up into two sections. setting up the AVR environment and then building the final hex file. Any additional libraries are just submodules in the 3rdparty folder. this first part sets up the environment along with the correct build configurations such as the avr compiler and the processor that this source will compile to. <code>Device</code> is set to whatever the associated device that will be compiled for. <code>CPU_FREQUENCY</code> will define the frequency that the processor is configured for. The actual frequency is defined by the fuse bits that will have to be set.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>env = Environment()
+
+# Set environment for AVR-GCC.
+env['CC'] = 'avr-gcc'
+env['CXX'] = 'avr-g++'
+env['AS'] = 'avr-gcc'
+env['CPPPATH'] = ['/usr/avr/include/', 'build']
+env['OBJCOPY'] = 'avr-objcopy'
+env['SIZE'] = 'avr-size'
+env.Append(CCFLAGS = '-Os -Wall -Werror -flto')
+
+# Declare some variables about microcontroller.
+# Microcontroller type.
+DEVICE = 'atmega328'
+# Microcontroller frequency.
+CPU_FREQUENCY = '8000000UL' # Hz
+
+
+# Set environment for an Atmel AVR Atmega 328p microcontroller.
+# Create and initialize the environment.
+env.Append(CCFLAGS = '-mmcu=' + DEVICE)
+env.Append(LINKFLAGS = '-mmcu=' + DEVICE)
+env.Append(LINKFLAGS = '-Wl,-u,vfprintf -lprintf_min')
+env.Append(LINKFLAGS = '-lm')
+env.Append(CPPDEFINES = 'F_CPU=' + CPU_FREQUENCY)
+</code></pre></div></div>
+
+<p>The second section after this is just compiling the necessary code. In this case I’m using Minicore along with the Wire library and SD card library. the basic process is just to include all the necessary source files and defined the correct header locations. I could of separated Minicore into a static library along with the other libraries and link that separately but the compile times are so quick that it’s not really necessary. its fairly easy to include other submodules and modify the build with other libraries.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Define target name.
+TARGET = 'build/main'
+
+# Define source file.
+env.Append(CPPPATH=[
+    'src',
+    '3rdparty/MiniCore/avr/cores/MCUdude_corefiles/',
+    '3rdparty/MiniCore/avr/libraries/Wire/src/',
+    '3rdparty/MiniCore/avr/libraries/SPI/src/',
+    '3rdparty/SD/src/',
+    '3rdparty/MiniCore/avr/variants/standard'])
+wiring_pulse = env.Object(
+    target = '3rdparty/MiniCore/avr/cores/MCUdude_corefiles/wiring_pulse_1.o',
+    source = '3rdparty/MiniCore/avr/cores/MCUdude_corefiles/wiring_pulse.S')
+sources = [
+    Glob('./main.cpp'),
+    Glob("3rdparty/MiniCore/avr/cores/MCUdude_corefiles/*.cpp"),
+    Glob("3rdparty/MiniCore/avr/cores/MCUdude_corefiles/*.c"),
+    Glob("3rdparty/MiniCore/avr/libraries/Wire/src/*/*.c"),
+    Glob("3rdparty/MiniCore/avr/libraries/Wire/src/*.cpp"),
+    Glob("3rdparty/MiniCore/avr/libraries/SPI/src/*.cpp"),
+    Glob("3rdparty/SD/src/*/*.cpp"),
+    Glob("3rdparty/SD/src/*.cpp"),
+    wiring_pulse]
+
+# Build the program.
+# Default() is used so that when running scons only sources are
+# compiled and linked- no other commands (see below) are run
+
+Default(env.Program(target = TARGET + '.elf', source = sources))
+
+# Create hex binary file.
+Default(env.Command(TARGET + '.hex', TARGET + '.elf', env['OBJCOPY'] + ' -O ihex $SOURCE $TARGET'))
+
+# Compute memory usage.
+Default(env.Command(None, TARGET + '.elf', env['SIZE'] + ' -C --mcu=' + DEVICE + ' $SOURCE'))
+Default(env.Command(None, None, 'ctags -R -f src/.tags src'))
+</code></pre></div></div>
+
+<p>Build Template: <a href="https://github.com/GaitRehabilitation/avr_ardunio_template">source</a></p>
+
+    </div>
+</section>
+
+
+
+  <!-- Pagination links -->
+<div class="level container is-mobile foot">
+
+  <div class="level-left icon-bar">
+    
+      <a href="www.linkedin.com/in/michaelpollind" class="social-media-icons"><i class="fab fa-2x fa-linkedin" aria-hidden="true"></i></a>
+    
+    
+      <a href="mailto:polli104@mail.chapman.edu" class="social-media-icons"><i class="fas fa-2x fa-envelope-square" aria-hidden="true"></i></a>
+    
+    
+      <a href="https://twitter.com/MPollind" class="social-media-icons"><i class="fab fa-2x fa-twitter-square" aria-hidden="true"></i></a>
+    
+    
+      <a href="https://github.com/pollend" class="social-media-icons"><i class="fab fa-2x fa-github-square"></i></a>
+    
+  </div>
+
+  <div class="level-right">
+    
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </div><!-- /.main -->
+</body>
+</html>

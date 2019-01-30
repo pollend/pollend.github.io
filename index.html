@@ -62,6 +62,24 @@
   <div class="articles">
     
     <section class="section article">
+        <h1 class="title article-title"></span> <a href="https://pollend.github.io//2019/01/29/ardunio-avr-scons.html">Ardunio, Avr and Scons</a></h1>
+        <h2 class="subtitle">
+            <p class="tag is-rounded">29 Jan 2019</p>
+        </h2>
+        <div class="article-body">
+            <p>The Arduino IDE is a really good starting environment but I was looking for something a bit more flexible. 
+Atmel studio is built for AVR chips but the environment obscures a lot of the process and adding an Ardunio library prevents the IDE 
+from properly building the binary and working out how to fix the build was just too much of a hassle. This configuration allows the use of other 
+environments besides the Ardunio IDE such as <a href="https://code.visualstudio.com/">Vscode</a> and <a href="https://www.jetbrains.com/clion/">Clion</a>. 
+Scons is a build system centered around python and can be easily configured to produce the correct binaries for AVR using avr-gcc, avr-g++, and avr-objcopy. The basic process is 
+to compile the source using the avr-g++, avr-gcc and then converting the compiled object files to ihex.
+The build process can also produce the necessary .hex files that can be flashed with <a href="https://www.microchip.com/mplab/mplab-integrated-programming-environment">Mplab IPE</a> or avrdude.</p>
+
+
+        </div>
+    </section>
+    
+    <section class="section article">
         <h1 class="title article-title"></span> <a href="https://pollend.github.io//2018/11/18/micro-logger-v1-0-icm-20498.html">Micro Logger V1.0 (ICM-20498)</a></h1>
         <h2 class="subtitle">
             <p class="tag is-rounded">18 Nov 2018</p>
