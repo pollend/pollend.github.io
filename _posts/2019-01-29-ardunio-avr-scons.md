@@ -85,4 +85,4 @@ Default(env.Command(None, None, 'ctags -R -f src/.tags src'))
 ```
 
 
-Build Template: [source](https://github.com/GaitRehabilitation/avr_ardunio_template) 
+## Build Template: [source](https://github.com/GaitRehabilitation/avr_ardunio_template) 
