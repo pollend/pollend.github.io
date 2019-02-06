@@ -7,6 +7,9 @@ education:
   - degree: Bachelor of Computer Science
     university: Chapman University
     time: 2014 - 2018
+  - degree: Masters of Computer Science
+    university: Chapman University
+    time: 2018 - 2019
 languages:
   - java
   - C++
