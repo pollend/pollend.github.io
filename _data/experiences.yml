@@ -1,13 +1,13 @@
 title: Experience
 items:
-  - title: Research Assistance
+  - title: Research Assistant
     association: Chapman Rinker
     link: https://sites.chapman.edu/soangra/
     time: Nov 2017 - Present
-    description: >
+    description: |
       Worked with Professor Soangra and developed tools for physical therapy. This work focused on providing
-      treatment through the use of and design of embedded boards.
-      - Built custom boards around arduino based circuits boards
+      treatment through the use of and design of embedded devices.
+      - Built custom board around an AVR microcontroller and flashed it with custom AVR code
       - Designed custom layouts to interface with embedded components and sensors
       - Designed a PCB in kicad and had the final board manufactured from a fab facility
   - title: Intern Computer Programmer
@@ -15,20 +15,21 @@ items:
     link: https://www.lcptracker.com/
     time: Jun 2015 - Aug 2015
     description: |
-      Provided workflow tools for collecting on site signatures.
+      Build a mobile app that provided workflow tools for collecting on site signatures.
       - Implemented a mobile Xamarin application for labor compliance.
       - Implemented MVVM patterns and repository patterns for an Sqlite backend
-  - title: Voxx Climate Research
-    association: Voxx Analytics
+  - title: Voxx Climate Research In Association With Chapman University
+    association: Voxx Analytics - Chapman University Research Collabration
     link: http://www.voxxanalytics.com
     time: Dec 2017 - Present
     description: |
+      Worked on research related to analyzing climate papers from Web Of Science, and NSF.
       - Built a web scraper in nightmare.js to scrape data from web of science and also collected data from NSF grant database
       - Used dplyer and R to clean and remove duplicates from WOS
-      - Developed a small python app with questions from the NSF data that will be used in a logistics model
+      - Used Docker and Postgres to query and combine data and the final model was built in R with the cleaned data dumpped from postgres.
   - title: Google Code-in Mentor
     association: MovingBlocks
-    link: https://terasology.org/2017/07/14/gsoc-students-01.html
+    link: https://codein.withgoogle.com/archive/2017/organization/5750501782061056/
     time: Nov 2017 - Jan 2018
     description: |
       Worked with other mentors and built tasks for Google Code In. This included tasks such as contributing

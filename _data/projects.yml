@@ -64,7 +64,9 @@ items:
         github: https://github.com/Terasology/ItemPipes
         description: |
           ItemPipes is a Terasology module that adds item transport system based on pipelines.
-          ItemPipes are useful for automation purposes - this module lets you transport items without your involvement.
+          ItemPipes are useful for automation purposes. This adds an additional means ot transporting items in the the b
+          base game.
+          - this module lets you transport items without your involvement.
       - title: Rails
         is-for-resuma: False
         link: https://forum.terasology.org/threads/rails.1923/
