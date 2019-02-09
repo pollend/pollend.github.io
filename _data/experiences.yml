@@ -6,10 +6,10 @@ items:
     time: Nov 2017 - Present
     description: |
       Worked with Professor Soangra and developed tools for physical therapy. This work focused on providing
-      treatment through the use of and design of embedded devices. pediatric physical therapy
+      treatment through the use of and design of embedded devices. Provides non-invasive intervention methods as an alternative means of treatment.
       - Built custom board around an AVR microcontroller and flashed it with custom AVR code
       - Designed custom layouts to interface with embedded components and sensors
-      - Designed a PCB in kicad and had the final board manufactured from a fab facility. This is a minitrization of the orignal stack of boards.
+      - Designed a PCB in kicad and had the final board manufactured from a fab facility. This is a miniaturization of the orignal stack of boards.
       - Developed QT app for data collection for Mbient sensors.
   - title: Intern Computer Programmer
     association: LCPtracker, inc
@@ -19,7 +19,7 @@ items:
       Built a mobile app that provided workflow tools for collecting on-site signatures.
       - Implemented a mobile Xamarin application for labor compliance.
       - Implemented MVVM patterns and repository patterns for an Sqlite backend
-      - Integrated with asp.net server.
+      - Implemented a way to consume API request from an ASP.NET server.
   - title: Voxx Climate Research In Association With Chapman University
     association: Voxx Analytics - Chapman University Research Collabration
     link: http://www.voxxanalytics.com
@@ -35,9 +35,9 @@ items:
     link: https://codein.withgoogle.com/archive/2017/organization/5750501782061056/
     time: Nov 2017 - Jan 2018
     description: |
-      Worked with other mentors and built tasks for Google Code In. This included tasks such as contributing
-      to an existing Terasology Module, working on documentation, Javadocs, and research. I worked with students and helped them complete tasks.
-      This included providing basic guidance for the Terasology code base and also refining a submitted task. The main goal of this was to introduce students to open source development.
+      The main goal of Google Code in(GCI) is to introduce students to open source development. Terasology was one of these organization that was involved with GCI.
       - Helped students learn the in and outs of open source development and also provided support when finishing tasks
+      - Helped students refine their work that activly improves Terasology
       - Reviewed work submitted by a student (code review, documentation review, javadocs, etc...)
-      - Was the selected mentor that went on the trip to the Googal campus.
+      - Students worked on tasks that contributed work to Terasology that include: Terasology Modules, Engine, UI, User Documentation, Javadocs, research, etc ...
+      - Selected as mentor to visit Google campus.
