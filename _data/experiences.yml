@@ -6,25 +6,28 @@ items:
     time: Nov 2017 - Present
     description: |
       Worked with Professor Soangra and developed tools for physical therapy. This work focused on providing
-      treatment through the use of and design of embedded devices.
+      treatment through the use of and design of embedded devices. pediatric physical therapy
       - Built custom board around an AVR microcontroller and flashed it with custom AVR code
       - Designed custom layouts to interface with embedded components and sensors
-      - Designed a PCB in kicad and had the final board manufactured from a fab facility
+      - Designed a PCB in kicad and had the final board manufactured from a fab facility. This is a minitrization of the orignal stack of boards.
+      - Developed QT app for data collection for Mbient sensors.
   - title: Intern Computer Programmer
     association: LCPtracker, inc
     link: https://www.lcptracker.com/
     time: Jun 2015 - Aug 2015
     description: |
-      Build a mobile app that provided workflow tools for collecting on site signatures.
+      Built a mobile app that provided workflow tools for collecting on-site signatures.
       - Implemented a mobile Xamarin application for labor compliance.
       - Implemented MVVM patterns and repository patterns for an Sqlite backend
+      - Integrated with asp.net server.
   - title: Voxx Climate Research In Association With Chapman University
     association: Voxx Analytics - Chapman University Research Collabration
     link: http://www.voxxanalytics.com
     time: Dec 2017 - Present
     description: |
       Worked on research related to analyzing climate papers from Web Of Science, and NSF.
-      - Built a web scraper in nightmare.js to scrape data from web of science and also collected data from NSF grant database
+      - Built a web scraper in nightmare.js to scrape data from Web of Science (WOS), a research paper index, and
+      also collected data from NSF grant database
       - Used dplyer and R to clean and remove duplicates from WOS
       - Used Docker and Postgres to query and combine data and the final model was built in R with the cleaned data dumpped from postgres.
   - title: Google Code-in Mentor
@@ -37,3 +40,4 @@ items:
       This included providing basic guidance for the Terasology code base and also refining a submitted task. The main goal of this was to introduce students to open source development.
       - Helped students learn the in and outs of open source development and also provided support when finishing tasks
       - Reviewed work submitted by a student (code review, documentation review, javadocs, etc...)
+      - Was the selected mentor that went on the trip to the Googal campus.

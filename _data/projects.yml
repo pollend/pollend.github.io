@@ -45,13 +45,13 @@ items:
         link:
         github: https://github.com/GaitRehabilitation/SMART
         description: >
-          A tool that interfaces with Mbient sensors for the use of streaming and collecting live data.
+          A QT tool that interfaces with Mbient sensors for the use of streaming and collecting live data.
       - title: Mini Data Capture
         is-for-resuma: True
         link: https://sites.chapman.edu/soangra/2018/11/17/micro-logger-v1-0-icm-20498/
         github: https://github.com/GaitRehabilitation/mini_data_capture/tree/ICM-20948
         description: >
-          An Ardunio based logger that interfaces with an ICM-2048 and saves the resulting data to a SD card.
+          An Ardunio based logger that interfaces with an ICM-2048 and saves the resulting data to an SD card.
           - The data is saved at a rate of 500hz
   - title: Terasology
     description:
@@ -71,8 +71,8 @@ items:
         is-for-resuma: False
         link: https://forum.terasology.org/threads/rails.1923/
         github: https://github.com/Terasology/Rails
-        description: >
-          A mod that allows tracks to be customized and edited
+        description: |
+          Rails is a Terasology module that adds rail transport into the game.
   - title: Mini Game Projects
     description:
     image:
@@ -93,7 +93,7 @@ items:
         steam: https://store.steampowered.com/app/517770/Caketomino/
         description: |
           Caketominoes is a VR game based mainly around the concept of pantomimes.
-          - implemented mechanic to pick up and snap blocks to board
+          - implemented mechanics to pick up and snap blocks to a board
           - modeled a lot of the elements that appeared in the kitchen
       - title: Alchehistory
         googleplay: https://play.google.com/store/apps/details?id=com.SmoketreeStudios.Trees.Alchehistory&hl=en
@@ -104,12 +104,12 @@ items:
           a selection of small self contained levels and an infinite mode of play. 
       - title: Momentus
         is-for-resuma: True
+        github: https://github.com/pollend/Orbital
         description: |
           Momentus is a simple space game where the basic goal is to bring resources
-          back to the home planet. This game was featured in the 2013 IEEE triple game sig
-          and came in at second place.
-          - Won for Best Space Game and Best Asteroid Game
-          - worked on the major parts of the ui
+          back to the home planet. This game was featured in the 2013 IEEE Game Sig
+          and came in second place. This game won best game and best astroid game. I
+          worked on major parts of the ui.
   - title: Datascience
     items:
       - title: Core Logic Challenge 1
@@ -118,7 +118,7 @@ items:
         description: |
           - Worked on data provided by Core Logic
           - downloaded and parsed SRTM data
-          - provided visualziations that showed the elevation of the house and information about the view of the house
+          - Provided visualizations that showed the elevation of the house and information about the view of the house
           from bodies of water
   - title: Webwork
     items:
