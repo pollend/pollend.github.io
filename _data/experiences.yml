@@ -21,7 +21,7 @@ items:
       - Implemented MVVM patterns and repository patterns for an Sqlite backend
       - Implemented a way to consume API request from an ASP.NET server.
   - title: Voxx Climate Research In Association With Chapman University
-    association: Voxx Analytics - Chapman University Research Collabration
+    association: Voxx Analytics - Chapman University Research Collaboration
     link: http://www.voxxanalytics.com
     time: Dec 2017 - Present
     description: |
@@ -37,7 +37,7 @@ items:
     description: |
       The main goal of Google Code in(GCI) is to introduce students to open source development. Terasology was one of these organization that was involved with GCI.
       - Helped students learn the in and outs of open source development and also provided support when finishing tasks
-      - Helped students refine their work that activly improves Terasology
+      - Helped students refine their work that actively improves Terasology
       - Reviewed work submitted by a student (code review, documentation review, javadocs, etc...)
       - Students worked on tasks that contributed work to Terasology that include: Terasology Modules, Engine, UI, User Documentation, Javadocs, research, etc ...
       - Selected as mentor to visit Google campus.
